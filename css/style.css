@@ -31,12 +31,16 @@ body {
   height: 40px;
 }
 .container nav .logo a svg {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 63px;
+}
+.container nav .logo a svg:hover {
+  width: 90px;
+  height: 90px;
 }
 .container nav .menu {
   align-self: center;
-  justify-self: center;
+  justify-self: end;
 }
 .container nav .menu ul {
   display: flex;
@@ -78,7 +82,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .container nav {
@@ -102,15 +106,22 @@ body {
     top: 70px;
     width: 80%;
     text-align: center;
-    background-color: #a79999;
+    background-color: #929292;
+    border-radius: 10px;
+    z-index: 27;
+    transition: all 0.5s ease-in-out;
   }
-  .show {
+  .container nav .show {
     display: block;
   }
   .container nav .menu ul {
     flex-direction: column;
+    padding: 20px;
   }
   .container nav .menu ul li a {
     font-size: 20px;
+  }
+  .container nav .menu ul li:hover {
+    background-color: #686767;
   }
 }
