@@ -8,10 +8,9 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #eee;
+  background-color: #ffffff;
 }
 .container {
-  width: 75%;
   margin: 0 auto;
 }
 .container nav {
@@ -35,8 +34,8 @@ body {
   height: 63px;
 }
 .container nav .logo a svg:hover {
-  width: 90px;
-  height: 90px;
+  width: 72px;
+  height: 65px;
 }
 .container nav .menu {
   align-self: center;
@@ -44,40 +43,39 @@ body {
 }
 .container nav .menu ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 .container nav .menu ul li a {
   font-size: 20px;
   color: #333;
+  text-transform: uppercase;
+  position: relative;
+}
+.container nav .menu ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #1c9617;
+  transition: width 0.3s ease-out;
+}
+.container nav .menu ul li a:hover::before {
+  width: 100%;
+  transition: width 0.3s ease-out;
 }
 .container nav i {
   display: none;
 }
-@media screen and (max-width: 1135px) {
-  .container nav .logo a svg {
-    width: 40px;
-    height: 40px;
-  }
+@media screen and (max-width: 768px) {
   .container nav .menu ul li a {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
-@media screen and (max-width: 905px) {
-  .container nav .logo a svg {
-    width: 35px;
-    height: 35px;
-  }
+@media screen and (max-width: 600px) {
   .container nav .menu ul li a {
     font-size: 12px;
-  }
-}
-@media screen and (max-width: 569px) {
-  .container nav .logo a svg {
-    width: 33px;
-    height: 33px;
-  }
-  .container nav .menu ul li a {
-    font-size: 8px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -96,6 +94,10 @@ body {
     width: 40px;
     height: 40px;
   }
+  .container nav .logo a svg:hover {
+    width: 42px;
+    height: 42px;
+  }
   .container nav i {
     display: block;
     font-size: 1.2rem;
@@ -104,7 +106,7 @@ body {
     display: none;
     position: absolute;
     top: 70px;
-    width: 80%;
+    width: 93%;
     text-align: center;
     background-color: #929292;
     border-radius: 10px;
@@ -117,6 +119,9 @@ body {
   .container nav .menu ul {
     flex-direction: column;
     padding: 20px;
+  }
+  .container nav .menu ul li {
+    padding: 10px;
   }
   .container nav .menu ul li a {
     font-size: 20px;
