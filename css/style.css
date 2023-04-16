@@ -208,10 +208,10 @@ main {
   .container main .itroduction {
   }
   .container main .itroduction .Hello {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   .container main .itroduction .job {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   .container main .itroduction .portfolio-btn {
     border: 1px solid #141414;
@@ -222,5 +222,12 @@ main {
     font-weight: bold;
     cursor: pointer;
     margin-top: 5px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
   }
 }
