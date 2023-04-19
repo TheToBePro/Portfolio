@@ -1,6 +1,7 @@
 const menu = document.querySelector(".menu");
 const icon = document.querySelector(".menuIcon");
 const iconx = document.querySelector(".iconx");
+const list = document.querySelector(".list");
 
 icon.addEventListener("click", () => {
   menu.classList.add("show");
@@ -8,6 +9,11 @@ icon.addEventListener("click", () => {
   iconx.classList.add("appear");
 });
 iconx.addEventListener("click", () => {
+  menu.classList.remove("show");
+  icon.classList.remove("disppear");
+  iconx.classList.remove("appear");
+});
+list.addEventListener("click", () => {
   menu.classList.remove("show");
   icon.classList.remove("disppear");
   iconx.classList.remove("appear");
