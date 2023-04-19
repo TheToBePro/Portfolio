@@ -505,4 +505,8 @@ main .contact .contact-btn:hover {
   main .contact .contact-btn:hover {
     background-color: #6b63cf;
   }
+  main .cards .card h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
 }
